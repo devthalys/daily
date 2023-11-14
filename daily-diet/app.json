@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "daily-diety",
-    "slug": "daily-diety",
+    "name": "daily-diet",
+    "slug": "daily-diet",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
