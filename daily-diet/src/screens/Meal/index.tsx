@@ -4,7 +4,7 @@ import { Header } from "@components/Header";
 export function Meal() {
   return (
     <Container>
-      <Header showBackButton/>
+      <Header/>
     </Container>
   )
 }
