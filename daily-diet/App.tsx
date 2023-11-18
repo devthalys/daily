@@ -2,10 +2,10 @@ import { StatusBar } from 'react-native'
 import { ThemeProvider } from 'styled-components/native';
 import { useFonts, NunitoSans_400Regular, NunitoSans_700Bold } from '@expo-google-fonts/nunito-sans';
 
-import { Meal } from './src/screens/Meal';
+import { Meal } from '@screens/Meal';
 
 import theme from './src/theme'
-import { Loading } from './src/components/Loading';
+import { Loading } from '@components/Loading';
 
 export default function App() {
   const [fontsLoaded] = useFonts({

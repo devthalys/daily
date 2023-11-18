@@ -1,13 +1,10 @@
-import { Text } from "react-native";
-
 import { Container } from "./styles";
+import { Header } from "@components/Header";
 
 export function Meal() {
   return (
     <Container>
-      <Text>
-        refeições
-      </Text>
+      <Header showBackButton/>
     </Container>
   )
 }
