@@ -1,16 +1,21 @@
-import { Container, EnterButton, EnterIcom ,Porcentage, PorcentageText } from "./styles";
+import { Container, EnterButton, EnterIcom, Porcentage, PorcentageText } from "./styles";
 
-export function Meal() {
+type Props = {
+  name: string;
+  porcentage: string;
+}
+
+export function Meal({ name, porcentage }: Props) {
   return (
     <Container>
       <EnterButton>
-        <EnterIcom/>
+        <EnterIcom />
       </EnterButton>
       <Porcentage>
-        90,86%
+        {porcentage}
       </Porcentage>
       <PorcentageText>
-        das refeições dentro da dieta
+        {name}
       </PorcentageText>
     </Container>
   )

@@ -3,7 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import styled from "styled-components/native";
 
 export const Container = styled(SafeAreaView)`
-  width: 327px;
+  width: 100%;
   padding: 20px 16px;
 
   flex-direction: column;
@@ -16,13 +16,13 @@ export const Container = styled(SafeAreaView)`
 `;
 
 export const EnterButton = styled.TouchableOpacity`
-/* flex: 1; */
-position: absolute;
-right: 8px;
-top: 8px;
+  /* flex: 1; */
+  position: absolute;
+  right: 8px;
+  top: 8px;
 `;
 
-export const EnterIcom = styled(CaretRight).attrs(({theme}) => ({
+export const EnterIcom = styled(CaretRight).attrs(({ theme }) => ({
   size: 24,
   color: theme.COLORS.GREEN_DARK,
 }))``;
