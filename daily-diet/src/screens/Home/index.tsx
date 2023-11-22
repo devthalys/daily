@@ -13,7 +13,7 @@ export function Home() {
         porcentage="90,86%"
       />
       <Button
-        type="SECONDARY"
+        text="Refeições"
         title="Nova refeição"
         icon="add"
       />

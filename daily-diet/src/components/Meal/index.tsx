@@ -1,16 +1,19 @@
-import { Container, EnterButton, EnterIcom, Porcentage, PorcentageText } from "./styles";
+import { Container, OpenButton, EnterIcom, Porcentage, PorcentageText, MealTypeStyleProps } from "./styles";
 
 type Props = {
+  type?: MealTypeStyleProps;
   name: string;
   porcentage: string;
 }
 
-export function Meal({ name, porcentage }: Props) {
+export function Meal({ type = "PRIMARY", name, porcentage }: Props) {
   return (
-    <Container>
-      <EnterButton>
+    <Container
+      type={type}
+    >
+      <OpenButton>
         <EnterIcom />
-      </EnterButton>
+      </OpenButton>
       <Porcentage>
         {porcentage}
       </Porcentage>

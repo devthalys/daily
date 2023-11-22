@@ -1,8 +1,13 @@
 import { CaretRight } from "phosphor-react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import styled from "styled-components/native";
 
-export const Container = styled(SafeAreaView)`
+export type MealTypeStyleProps = 'PRIMARY' | 'SECONDARY';
+
+type Props = {
+  type: MealTypeStyleProps;
+}
+
+export const Container = styled.View<Props>`
   width: 100%;
   padding: 20px 16px;
 
@@ -12,11 +17,12 @@ export const Container = styled(SafeAreaView)`
   gap: 2px;
 
   border-radius: 8px;
-  background-color: ${({ theme }) => theme.COLORS.GREEN_LIGHT};
+  background-color: ${({ theme, type }) => type === "PRIMARY" ? theme.COLORS.GREEN_LIGHT : theme.COLORS.RED_LIGHT};
+
+  margin-bottom: 40px;
 `;
 
-export const EnterButton = styled.TouchableOpacity`
-  /* flex: 1; */
+export const OpenButton = styled.TouchableOpacity`
   position: absolute;
   right: 8px;
   top: 8px;
