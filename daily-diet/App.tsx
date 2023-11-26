@@ -2,11 +2,11 @@ import { StatusBar } from 'react-native'
 import { ThemeProvider } from 'styled-components/native';
 import { useFonts, NunitoSans_400Regular, NunitoSans_700Bold } from '@expo-google-fonts/nunito-sans';
 
-import { Home } from '@screens/Home';
-import { Statistics } from '@screens/Statistics';
-
 import theme from './src/theme'
+
 import { Loading } from '@components/Loading';
+
+import { Routes } from '@routes/index';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -20,7 +20,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Statistics /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </ThemeProvider>
   )
 }

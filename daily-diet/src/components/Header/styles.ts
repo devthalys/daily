@@ -1,14 +1,14 @@
 import styled from 'styled-components/native'
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-export const Container = styled(SafeAreaView)`
+export const Container = styled.View`
   width: 100%;
 
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
-  padding: 30px 0px;
+  padding: 20px 0px 30px 0px;
 `;
 
 export const Logo = styled.Image`
