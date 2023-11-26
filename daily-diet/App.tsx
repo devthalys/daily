@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components/native';
 import { useFonts, NunitoSans_400Regular, NunitoSans_700Bold } from '@expo-google-fonts/nunito-sans';
 
 import { Home } from '@screens/Home';
+import { Statistics } from '@screens/Statistics';
 
 import theme from './src/theme'
 import { Loading } from '@components/Loading';
@@ -19,7 +20,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Home /> : <Loading />}
+      {fontsLoaded ? <Statistics /> : <Loading />}
     </ThemeProvider>
   )
 }
